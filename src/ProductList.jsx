@@ -1,4 +1,5 @@
 import React, { useState,useEffect } from 'react';
+
 import './ProductList.css'
 import CartItem from './CartItem';
 import { addItem } from './CartSlice';
@@ -250,14 +251,14 @@ const handlePlantsClick = (e) => {
   };
   
 
-  const handleAddToCart = (plant) => {
-  dispatch(addItem(plant));
-  setAddedToCart((prevState) => ({
-     ...prevState,
-     [plant.name]: true, // Set the product name as key and value as true to indicate it's added to cart
-     
-   }));
-    };
+  const handleAddToCart = (product) => {
+    console.log("Donovan CHENCHAIH");
+    dispatch(addItem(product));
+    setAddedToCart((prevState) => ({
+       ...prevState,
+       [product.name]: true, // Set the product name as key and value as true to indicate it's added to cart
+     }));
+  };
     return (
         <div>
              <div className="navbar" style={styleObj}>
