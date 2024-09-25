@@ -13,6 +13,10 @@
   background-color: #f8f8f8;
 }
 
+.main-title {
+    padding-left: 50px;
+}
+
 .background-image {
   position: absolute;
   top: 0;
@@ -74,7 +78,7 @@
 }
 
 .get-started-button {
-  padding: 15px 25px;
+  padding: 15px 35px;
   font-size: 23px;
   border: none;
   border-radius: 5px;
